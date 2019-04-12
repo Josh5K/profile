@@ -1,0 +1,33 @@
+.col-3 {
+
+}
+
+.skills-title {
+  text-align: center;
+}
+
+.item {
+  background-color: #343333;
+  border-left: 5px solid #e65650;
+  margin: 20px;
+  height: 300px;
+  width: 300px;
+  text-align: center;
+  color: whitesmoke;
+
+  &:hover {
+    margin-top: -5px;
+  }
+}
+
+.skills {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.skill-icon {
+  display: inline-block;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
