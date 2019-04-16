@@ -10,21 +10,33 @@
   font-size: 1.7em;
 }
 
-.bg-image {
-  background-image: url("https://img.freepik.com/free-photo/blue-cyber-circuit-future-technology-concept-background_42077-1985.jpg?size=626&ext=jpg");
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-  height: 100%;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .container {
   margin-top: 50px;
 }
 
 .card {
   margin-bottom: 10px;
+}
+
+.work {
+  background-color: #343333;
+  color: white;
+}
+
+.card-header {
+  border-bottom: 2px solid #e65650;
+}
+
+.card-subtitle {
+  color: #e65650 !important;
+}
+
+.sect-gap {
+  margin-bottom: 50px;
+}
+
+.card-text {
+  em {
+    color: #e65650;
+  }
 }

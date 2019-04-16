@@ -1,117 +1,64 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
 header  {
-    float: left;
-    width: 100%;
-    position: relative;
-    z-index: 1;
-    background-image: url("https://theprojector.ca/wp-content/uploads/2018/01/1-13012018-THEFORKS-UNGER.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 50px;
-}
-
-img {
   width: 100%;
+  background-image: url("../../assets/images/header_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
-.container.white {
-  background:#Fff;
-  margin-top: 450px;
-  border-right: 2px solid #e8e8e8;
-}
-
-.container.full {
-  width: 100%;
-  padding:0px;
-
-  .row {
-    padding:0px;
-    margin:0px;
-    width: 100%;
+.header-name {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 65px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  line-height: .8;
+  padding-top: 50px;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  &:before {
+      content: "< ";
+      line-height:20px;
+      font-size: 90px;
   }
-  div {
-    padding:0px;
-  }
-}
-
-.inner-header_bg > img {
-  float: left;
-  width: 100%;
-  height: 600px;
-}
-
-.fixed-title {
-	position:absolute;
-	left:47%;
-  top:25%;
-
-  h2 {
-    float:left;
-    width:100%;
-    padding-left: 2px;
-    font: 30px/55px "Lato";
-    color: #000;
-    letter-spacing:2px;
-    text-transform:capitalize;
-  }
-  h1 {
-    float:left;
-    width:100%;
-    font: 900 35px "Intro";
-    color:#000;
-    letter-spacing:3px;
-    padding-bottom: 10px;
-  }
-  p {
-    font: 16px "Noticia Text";
-    color:#e65650;
-    letter-spacing:1px;
-  }
-  span {
-    padding-top: 25px;
-    font: 15px/30px "Lato";
-    color:#ddd;
-    letter-spacing:0.5px;
-    float:left;
-    width:80%;
-    padding-bottom: 40px;
+   &:after {
+      content: " />";
+      line-height:40px;
+      font-size: 90px;
   }
 }
+span {
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-size: 25px;
 
-.fixed-title.inner {
-	position: absolute;
-	left:55%;
-	top:15%;
-	width: 550px;
 }
+.header-subtitle{
+  font-family: 'Montserrat';
+  font-size: 22px;
+  display: inline-block;
+  margin-left: 4px;
+  color: #fff;
 
-.fixed-title > a {
-	display:inline-block;
-	padding: 20px 30px;
-	border: 2px solid #e65650;
-	font: bold 15px/24px "Lato";
-	color:#e65650;
-  letter-spacing:0.4px;
-  i {
-    padding-right: 10px;
-    font-size:20px;
-    color:#e65650;
+  &:nth-of-type(2) {
+    &:before, &:after {
+      content: " | ";
+      color: #fff;
+      line-height:40px;
+    }
   }
-}
-
-.fixed-title.fixed {
-	position:absolute;
-	left:55%;
-	top:15%;
 }
 
 .social {
-	padding-top: 40px;
-	float:left;
+	padding: 10px;
   width:100%;
   list-style: none;
   li {
-    float:left;
     margin-right:20px;
+    display: inline;
     a {
       display:inline-block;
       width: 62px;
@@ -124,19 +71,13 @@ img {
       -ms-border-radius: 100%;
       border-radius: 100%;
 
-      -moz-transition: all 0.3s ease-in;
-      -webkit-transition: all 0.3s ease-in;
-      -ms-transition: all 0.3s ease-in;
-      -o-transition: all 0.3s ease-in;
-       transition: all 0.3s ease-in;
-
        i {
         font-size: 20px;
         color:#FFF;
         line-height: 62px;
       }
       &:hover {
-        margin-top: -10px;
+        transform: scale(1.1);
       }
     }
   }
@@ -144,6 +85,39 @@ img {
 
 //Social Icon backgrounds
 .s1 { background:#627aad; }
-.s2 { background:#d62d20; }
-.s3 { background:#ed4a89; }
-.s4 { background:#ff4500; }
+.s2 { background:#000; }
+
+@media screen and (max-width: 600px) {
+  .header-name {
+    font-size: 30px;
+    &:before {
+      content: "< ";
+      line-height:30px;
+      font-size: 40px;
+    }
+    &:after {
+        content: " />";
+        line-height:30px;
+        font-size: 40px;
+    }
+  }
+
+  .social {
+    li {
+      a {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  .header-subtitle{
+    font-size: 15px;
+
+    &:nth-of-type(2) {
+      &:before, &:after {
+        line-height:30px;
+      }
+    }
+  }
+}
