@@ -74,3 +74,26 @@ hr {
     border-radius: 20px;
   }
 }
+
+@media screen and (max-width: 1100px) {
+
+  .buttons {
+    button {
+      font-size: 10px !important;
+    }
+  }
+
+  .about {
+    width: 100%;
+    .title {
+      h2 {
+        font-size: 30px;
+      }
+    }
+    .description {
+      p{
+        font-size: 15px;
+      }
+    }
+  }
+}

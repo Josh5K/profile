@@ -1,5 +1,11 @@
 .skills-title {
   text-align: center;
+  h1 {
+    font-size: 2vw;
+}
+  p {
+    font-size: 1vw;
+  }
 }
 
 .item {
@@ -8,10 +14,14 @@
   margin-bottom: 20px;
   text-align: center;
   color: whitesmoke;
-  padding: 25% 5% 25% 5%;
+  position: relative;
 
   &:hover {
     margin-top: -5px;
+  }
+
+  h5 {
+    padding: 10%;
   }
 }
 
@@ -34,24 +44,17 @@
   grid-gap: 10px;
   grid-template-columns: repeat(5, 1fr);
   grid-auto-rows: minmax(50px, 1fr);
+
+}
+
+@media only screen and (max-width: 800px) {
+  .skills {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 
 @media only screen and (max-width: 1600px) {
-
-  .skill-icon {
-    display: inline-block;
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 25px;
-    height: 25px;
-  }
-
-  .skills {
-    grid-gap: 5px;
-  }
-
   .fa-7x {
     font-size: 35px;
   }
@@ -63,10 +66,6 @@
 }
 
 @media only screen and (max-width: 1350px) {
-
-  .skills {
-    width: 90%;
-  }
 
   .fa-7x {
     font-size: 30px;
@@ -86,10 +85,10 @@
 
 @media only screen and (max-width: 600px) {
   .fa-7x {
-    font-size: 15px;
+    font-size: 25px;
   }
 
   .tech-title {
-    font-size: 5px;
+    font-size: 8px;
   }
 }
